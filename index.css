@@ -1,4 +1,15 @@
-#parent {
+#heading {
   color: red;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo svg, .userLogo svg {
+  width: 30px;
+  height: 30px;
 }
 
