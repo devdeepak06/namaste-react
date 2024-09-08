@@ -19,3 +19,6 @@
 - HTTPs 
 - Tree Shaking - remove unused code
 - Different dev and prod bundles
+
+## props are just normal arguments to js function
+### passing a props to a component is just like, passing an argument to a function 
