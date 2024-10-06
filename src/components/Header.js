@@ -1,4 +1,11 @@
+import { useState } from "react";
+
 const Header = () => {
+  const [btnName, setBtnName] = useState("Login");
+  const onBtnClick = () => {
+    setBtnName((prevState) => (prevState === "Login" ? "Logout" : "Login"));
+  };
+
   return (
     <div className="header">
       <a className="logo">
@@ -44,7 +51,7 @@ const Header = () => {
             <a href="#">Contact us</a>
           </li>
           <li>
-            <a href="#">Sign in</a>
+            <button onClick={onBtnClick}>{btnName}</button>
           </li>
           <li>
             <a href="#">Cart</a>
